@@ -1,0 +1,1149 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>
+  @layer base {
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      overscroll-behavior: none;
+    }
+    h1, h2, h3, h4, h5, h6, .font-heading {
+      font-family: 'Flexo Medium', 'Flexo', 'Poppins', system-ui, -apple-system, sans-serif;
+      font-weight: 700;
+    }
+    p, span, button, a, input, textarea, select, label {
+      font-family: 'Poppins', sans-serif;
+    }
+    main > :first-child {
+      margin-top: 0 !important;
+    }
+    main > :last-child {
+      margin-bottom: 0 !important;
+    }
+  }
+  ::-webkit-scrollbar {
+    display: none;
+  }
+</style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-container-highest": "#303636", "primary-container": "#0b1c2c", "secondary-fixed": "#b3ebff", "surface-tint": "#b7c8de", "inverse-primary": "#506072", "on-primary": "#223243", "outline": "#8e9196", "on-error-container": "#ffdad6", "secondary-container": "#03a4c5", "surface-container": "#1b2121", "on-primary-fixed": "#0c1d2d", "inverse-on-surface": "#2c3132", "primary": "#b7c8de", "secondary": "#5cd5f8", "tertiary": "#92d3c6", "primary-fixed": "#d3e4fa", "inverse-surface": "#dee3e3", "on-secondary-fixed": "#001f27", "background": "#0f1415", "on-surface": "#dee3e3", "on-error": "#690005", "outline-variant": "#44474c", "surface-container-high": "#252b2b", "tertiary-fixed": "#aeefe2", "surface-container-low": "#171d1d", "surface": "#0f1415", "on-tertiary-fixed": "#00201c", "on-tertiary": "#003731", "surface-variant": "#303636", "surface-dim": "#0f1415", "tertiary-fixed-dim": "#92d3c6", "on-background": "#dee3e3", "secondary-fixed-dim": "#5cd5f8", "on-primary-container": "#758599", "primary-fixed-dim": "#b7c8de", "error": "#ffb4ab", "on-tertiary-fixed-variant": "#015047", "on-secondary-container": "#003340", "on-primary-fixed-variant": "#38485a", "on-secondary": "#003642", "error-container": "#93000a", "surface-container-lowest": "#0a0f10", "on-surface-variant": "#c4c6cc", "tertiary-container": "#001f1b", "surface-bright": "#353a3b", "on-tertiary-container": "#4f8e83", "on-secondary-fixed-variant": "#004e5f" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "margin-tablet": "2rem", "margin": "4rem", "space-lg": "1.75rem", "gutter": "1.5rem", "space-md": "1rem", "margin-mobile": "1.25rem", "space-xl": "3rem", "space-sm": "0.5rem", "space-xs": "0.25rem", "gutter-mobile": "1rem" }, "fontFamily": { "body-md": [ "Poppins", "sans-serif" ], "headline-md": [ "Flexo Medium", "Flexo", "Poppins", "sans-serif" ], "label-lg": [ "Poppins", "sans-serif" ], "body-lg": [ "Poppins", "sans-serif" ], "headline-sm": [ "Flexo Medium", "Flexo", "Poppins", "sans-serif" ], "display-mobile": [ "Flexo Medium", "Flexo", "Poppins", "sans-serif" ], "headline-lg": [ "Flexo Medium", "Flexo", "Poppins", "sans-serif" ], "headline-md-mobile": [ "Flexo Medium", "Flexo", "Poppins", "sans-serif" ], "body-sm": [ "Poppins", "sans-serif" ], "headline-lg-mobile": [ "Flexo Medium", "Flexo", "Poppins", "sans-serif" ], "label-md": [ "Poppins", "sans-serif" ], "display": [ "Flexo Medium", "Flexo", "Poppins", "sans-serif" ], "label-sm": [ "Poppins", "sans-serif" ] }, "fontSize": { "body-md": [ "15px", { "lineHeight": "24px", "fontWeight": "400" } ], "headline-md": [ "36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "label-lg": [ "14px", { "lineHeight": "18px", "letterSpacing": "0.06em", "fontWeight": "600" } ], "body-lg": [ "18px", { "lineHeight": "28px", "fontWeight": "400" } ], "headline-sm": [ "22px", { "lineHeight": "30px", "letterSpacing": "-0.01em", "fontWeight": "700" } ], "display-mobile": [ "42px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "800" } ], "headline-lg": [ "52px", { "lineHeight": "60px", "letterSpacing": "-0.025em", "fontWeight": "700" } ], "headline-md-mobile": [ "26px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "700" } ], "body-sm": [ "13px", { "lineHeight": "20px", "fontWeight": "400" } ], "headline-lg-mobile": [ "32px", { "lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "label-md": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.08em", "fontWeight": "500" } ], "display": [ "76px", { "lineHeight": "84px", "letterSpacing": "-0.03em", "fontWeight": "800" } ], "label-sm": [ "10px", { "lineHeight": "14px", "letterSpacing": "0.1em", "fontWeight": "600" } ] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-secondary-container selection:text-on-secondary-container"><header class="fixed top-0 left-0 right-0 w-full z-50 bg-[#0b1c2c]/95 backdrop-blur-xl border-b border-surface-container shadow-[0_1px_8px_rgba(0,0,0,0.25)]"><div class="h-20 w-full px-margin-mobile md:px-margin-tablet lg:px-margin flex items-center justify-between"><div class="flex items-center gap-space-md"><img alt="Umma Marketing - Logo Oficial" class="h-10 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcxDLdjeUVleUfWClswgGu15V839B7Y9oGVwbyq9zebiG4O5nniDobUQzh_iTpFZTyCONWJSp_4W4Th4ETDGzlks7X1_aK-rwDY4jeOqvq1AZpjsl9k3A7Ism9UBA8g1fDwDF8AOo6QagsDQmKG3Zt8pQOnnEM7H11H3mATuvb4Me4pInOTYp1RgfGz7Fn9SftJpu6E3v9QXhRP9QQ6OOWOUQlSFuH9uYS_B1pfR1N-vVxTYANVP3zFCrlqhml2DAQ3g"/><span class="font-headline-sm text-headline-sm tracking-tight text-on-surface">Umma Marketing</span></div><nav class="hidden lg:flex items-center gap-space-lg" data-active-classes="bg-primary-container text-on-primary-container rounded-lg font-label-md"><a aria-current="page" class="uppercase tracking-wider transition-colors py-space-xs px-space-sm bg-primary-container text-on-primary-container rounded-lg font-label-md" data-path="inicio" href="#">Inicio</a><a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors py-space-xs px-space-sm" data-path="nosotros" href="#nosotros">Nosotros</a><a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors py-space-xs px-space-sm" data-path="servicios" href="#servicios">Servicios</a><a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors py-space-xs px-space-sm" data-path="estrategia" href="#estrategia">Estrategia</a><a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors py-space-xs px-space-sm" data-path="contacto" href="#contacto">Contacto</a></nav><div class="flex items-center gap-space-md"><a class="hidden sm:inline-flex items-center justify-center bg-secondary-container text-on-secondary-container font-label-lg text-label-lg uppercase px-space-lg py-space-sm rounded transition-all hover:bg-tertiary hover:text-on-tertiary shadow-[0_0_20px_rgba(0,163,196,0.3)]" data-path="contacto" href="#contacto">Hablemos</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface"><div class="flex flex-col w-full">
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://ummamarketing.com/#organization",
+        "name": "Umma Marketing",
+        "url": "https://ummamarketing.com",
+        "logo": "https://lh3.googleusercontent.com/aida-public/AB6AXuDspy5X50ki08AMKqSZB6dJ2VtBAhZDrDKqGh_p1ngOV5aWMfxp_IlMG1PyZwsauECtt3zlKL-8F97wLbhSIbPoYmhLYImCIP-e1DviJFq4Jm79-u6S5iBmTcaiGa1YwKlZAAtVvbLSZYeCBaIaC7H1tBSylaODkyHk2swaF8I2TcgDmvL-e8PaPrhqgYwSGVsiv7soCfPx1PDLtGxyf_uZH4lyOHKis8qtz1DP3kLZLPU5fkMaJj1PLLik3jZQOmlK3g",
+        "description": "Agencia boutique de marketing digital, estrategia en redes sociales, posicionamiento SEO y branding con propósito.",
+        "sameAs": [
+          "https://instagram.com/ummamarketing",
+          "https://linkedin.com/company/umma-marketing",
+          "https://facebook.com/ummamarketing"
+        ]
+      },
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://ummamarketing.com/#service",
+        "name": "Umma Marketing - Servicios de Marketing y Estrategia Digital",
+        "parentOrganization": {
+          "@id": "https://ummamarketing.com/#organization"
+        },
+        "areaServed": "Global",
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Servicios Digitales",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Estrategia Digital Integral"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Estrategia de Redes Sociales"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "SEO y Posicionamiento en Buscadores e IA"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Marketing Digital y Campañas de Rendimiento"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Branding, Conceptualización y Comunicación"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Producción de Contenido Digital y Multimedia"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://ummamarketing.com/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Qué hace Umma Marketing?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Umma Marketing es una agencia que crea estrategias digitales, planes de redes sociales, branding, creación de contenido y posicionamiento SEO para ayudar a marcas a consolidar una presencia sólida, coherente y enfocada en el crecimiento sostenible."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Qué servicios de marketing digital ofrece Umma Marketing?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ofrecemos seis soluciones clave: Estrategia Digital, Estrategia y Gestión de Redes Sociales, SEO y Posicionamiento Semántico, Marketing Digital y Publicidad, Branding y Comunicación, y Producción de Contenido Digital."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Qué es una estrategia digital?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Es el plan maestro que define cómo una marca utiliza los canales, herramientas y contenidos digitales para alcanzar metas concretas de negocio, optimizando recursos y evitando la improvisación."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cómo ayuda el SEO al posicionamiento de una marca?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "El SEO optimiza la arquitectura de contenidos, la relevancia semántica y la estructura técnica para que motores de búsqueda tradicionales y modelos de IA generativa encuentren y recomienden la marca de manera natural."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Por qué una marca necesita una estrategia de redes sociales?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Porque publicar sin un objetivo produce ruido. Una estrategia de redes garantiza que cada publicación responda a la identidad de marca, dialogue con la comunidad indicada y aporte al crecimiento medible."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+<!-- SECCIÓN 1: HERO -->
+<section class="relative w-full overflow-hidden bg-primary-container text-on-surface py-space-xl lg:py-32 px-margin-mobile md:px-margin-tablet lg:px-margin" id="inicio">
+<div class="absolute -top-36 -right-24 w-96 h-96 rounded-full bg-secondary-container/15 blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-24 -left-20 w-80 h-80 rounded-full bg-tertiary/10 blur-3xl pointer-events-none"></div>
+<div class="relative z-10 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<div class="lg:col-span-7 flex flex-col items-start gap-space-md">
+<div class="inline-flex items-center gap-space-xs px-space-sm py-1 bg-surface-container rounded-full shadow-sm">
+<span class="w-2 h-2 rounded-full bg-secondary-container animate-pulse"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-tertiary">Agencia de Estrategia Digital</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg lg:text-display font-extrabold tracking-tight text-on-surface leading-[1.08]">
+          No se trata solo de estar en digital. <br class="hidden sm:inline"/>
+<span class="text-secondary">Se trata de tener una estrategia para crecer.</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mt-space-xs">
+          En Umma Marketing creamos estrategias digitales, estrategias de redes y soluciones de marketing que ayudan a marcas y empresas a construir una presencia digital con propósito.
+        </p>
+<div class="flex flex-wrap items-center gap-space-md pt-space-sm w-full sm:w-auto">
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-space-xs px-space-lg py-space-md bg-secondary-container text-on-secondary-container font-label-lg text-label-lg uppercase rounded shadow-lg hover:bg-tertiary hover:text-on-tertiary transition-all duration-150" href="#contacto">
+            Hablemos de tu marca
+            <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-space-xs px-space-lg py-space-md bg-surface-container-high text-on-surface font-label-lg text-label-lg uppercase rounded hover:bg-surface-container-highest transition-all duration-150" href="#nosotros">
+            Conoce Umma
+          </a>
+</div>
+<div class="grid grid-cols-3 gap-space-md pt-space-lg w-full max-w-lg">
+<div>
+<div class="font-headline-md text-headline-md font-bold text-tertiary">100%</div>
+<p class="font-body-sm text-body-sm text-outline">Enfoque Estratégico</p>
+</div>
+<div>
+<div class="font-headline-md text-headline-md font-bold text-secondary">6</div>
+<p class="font-body-sm text-body-sm text-outline">Capacidades Clave</p>
+</div>
+<div>
+<div class="font-headline-md text-headline-md font-bold text-on-surface">360°</div>
+<p class="font-body-sm text-body-sm text-outline">Visión y Ejecución</p>
+</div>
+</div>
+</div>
+<div class="lg:col-span-5 relative mt-space-lg lg:mt-0">
+<div class="relative bg-surface-container-low rounded-xl p-space-md lg:p-space-lg shadow-xl shadow-surface-container-lowest/80">
+<div class="flex items-center justify-between pb-space-sm mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="w-3 h-3 rounded-full bg-error"></span>
+<span class="w-3 h-3 rounded-full bg-secondary"></span>
+<span class="w-3 h-3 rounded-full bg-tertiary"></span>
+</div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Radar Estratégico • Umma OS</span>
+</div>
+<div class="relative h-64 w-full flex items-center justify-center bg-surface-container rounded-lg p-space-sm overflow-hidden">
+<svg class="w-full h-full text-secondary/30" fill="none" viewbox="0 0 200 200">
+<circle cx="100" cy="100" r="85" stroke="currentColor" stroke-dasharray="3 3"></circle>
+<circle cx="100" cy="100" r="60" stroke="currentColor" stroke-opacity="0.5"></circle>
+<circle cx="100" cy="100" r="35" stroke="currentColor" stroke-opacity="0.8"></circle>
+<line stroke="currentColor" stroke-opacity="0.3" x1="100" x2="100" y1="10" y2="190"></line>
+<line stroke="currentColor" stroke-opacity="0.3" x1="10" x2="190" y1="100" y2="100"></line>
+<polygon class="fill-secondary-container/20 stroke-secondary" points="100,28 148,82 135,145 65,140 52,78" stroke-width="2"></polygon>
+<circle class="fill-tertiary" cx="100" cy="28" r="4"></circle>
+<circle class="fill-secondary" cx="148" cy="82" r="4"></circle>
+<circle class="fill-tertiary" cx="135" cy="145" r="4"></circle>
+<circle class="fill-secondary" cx="65" cy="140" r="4"></circle>
+<circle class="fill-tertiary" cx="52" cy="78" r="4"></circle>
+</svg>
+<div class="absolute top-4 left-4 bg-primary-container/90 px-space-xs py-1 rounded shadow text-tertiary font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">tune</span> Estrategia Activa
+            </div>
+<div class="absolute bottom-4 right-4 bg-primary-container/90 px-space-xs py-1 rounded shadow text-secondary font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">verified</span> SEO Score 98/100
+            </div>
+</div>
+<div class="grid grid-cols-2 gap-space-sm mt-space-md">
+<div class="bg-surface-container rounded p-space-sm flex flex-col justify-between">
+<span class="font-label-sm text-label-sm uppercase text-outline">Alcance Orgánico</span>
+<span class="font-headline-sm text-headline-sm font-bold text-tertiary mt-1">+340%</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Crecimiento cualificado</span>
+</div>
+<div class="bg-surface-container rounded p-space-sm flex flex-col justify-between">
+<span class="font-label-sm text-label-sm uppercase text-outline">Arquitectura</span>
+<span class="font-headline-sm text-headline-sm font-bold text-secondary mt-1">Óptima</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Algoritmo Optimizado</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between text-outline font-label-sm text-label-sm">
+<span>AUDITORÍA CONTINUA</span>
+<span class="text-tertiary">DATOS EN TIEMPO REAL</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECCIÓN 2: ¿QUÉ ES UMMA MARKETING? -->
+<section class="w-full py-space-xl px-margin-mobile md:px-margin-tablet lg:px-margin bg-surface" id="nosotros">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-xl">
+<div class="flex flex-col items-start gap-space-xs max-w-3xl">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Conoce la Agencia</span>
+<h2 class="font-headline-lg text-headline-lg font-bold text-on-surface">Somos estrategia, creatividad y movimiento digital.</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-space-xs">
+          En Umma Marketing entendemos que cada marca tiene algo diferente que contar. Por eso combinamos estrategia digital, creatividad, contenido, posicionamiento y redes sociales para construir marcas que conectan con las personas y encuentran nuevas oportunidades de crecimiento.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<div class="group relative bg-surface-container-low p-space-lg rounded-xl shadow-md transition-all duration-200 hover:-translate-y-1 hover:shadow-xl">
+<div class="w-12 h-12 rounded bg-primary-container flex items-center justify-center text-secondary mb-space-md">
+<span class="material-symbols-outlined text-[28px]">insights</span>
+</div>
+<div class="flex items-center justify-between mb-space-xs">
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Estratégica</h3>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container text-tertiary">Pilar 01</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Partimos del análisis y la comprensión profunda de tu modelo de negocio antes de ejecutar. Cada táctica responde a una meta definida.
+          </p>
+<div class="mt-space-md pt-space-sm flex items-center gap-space-xs text-secondary font-label-md text-label-md">
+<span>Rumbo certero</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</div>
+</div>
+<div class="group relative bg-surface-container-low p-space-lg rounded-xl shadow-md transition-all duration-200 hover:-translate-y-1 hover:shadow-xl">
+<div class="w-12 h-12 rounded bg-primary-container flex items-center justify-center text-tertiary mb-space-md">
+<span class="material-symbols-outlined text-[28px]">draw</span>
+</div>
+<div class="flex items-center justify-between mb-space-xs">
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Creativa y Cercana</h3>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container text-secondary">Pilar 02</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Conectamos marcas con personas reales. Desarrollamos narrativas visuales y conceptos auténticos que generan empatía duradera.
+          </p>
+<div class="mt-space-md pt-space-sm flex items-center gap-space-xs text-tertiary font-label-md text-label-md">
+<span>Conexión humana</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</div>
+</div>
+<div class="group relative bg-surface-container-low p-space-lg rounded-xl shadow-md transition-all duration-200 hover:-translate-y-1 hover:shadow-xl">
+<div class="w-12 h-12 rounded bg-primary-container flex items-center justify-center text-secondary mb-space-md">
+<span class="material-symbols-outlined text-[28px]">bolt</span>
+</div>
+<div class="flex items-center justify-between mb-space-xs">
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Ágil y Disruptiva</h3>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container text-tertiary">Pilar 03</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Nos movemos a la velocidad de la cultura digital contemporánea. Probamos, ajustamos y capitalizamos tendencias con rapidez táctica.
+          </p>
+<div class="mt-space-md pt-space-sm flex items-center gap-space-xs text-secondary font-label-md text-label-md">
+<span>Evolución constante</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECCIÓN 3: SERVICIOS -->
+<section class="w-full py-space-xl px-margin-mobile md:px-margin-tablet lg:px-margin bg-surface-container-lowest" id="servicios">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-xl">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div class="flex flex-col items-start gap-space-xs max-w-2xl">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-tertiary">Capacidades Digitales</span>
+<h2 class="font-headline-lg text-headline-lg font-bold text-on-surface">Lo que hacemos para mover tu marca</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+          Ecosistema integral de soluciones diseñadas para generar impacto real en cada punto de contacto con tu audiencia.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<div class="bg-surface-container p-space-lg rounded-xl shadow-md flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded bg-surface-container-high flex items-center justify-center text-secondary mb-space-md">
+<span class="material-symbols-outlined text-[28px]">explore</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface mb-space-xs">Estrategia Digital</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md">
+              Definimos el plan maestro para activar y consolidar la presencia de tu marca en el ecosistema digital.
+            </p>
+<ul class="flex flex-col gap-space-xs">
+<li class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span> Planeación estratégica integral
+              </li>
+<li class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span> Definición de objetivos de negocio
+              </li>
+<li class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span> Estrategias de comunicación digital
+              </li>
+<li class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span> Desarrollo de presencia digital
+              </li>
+</ul>
+</div>
+<div class="pt-space-md mt-space-md">
+<a class="font-label-md text-label-md uppercase text-secondary hover:text-tertiary flex items-center gap-1 transition-colors" href="#contacto">
+              Consultar servicio <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<div class="bg-surface-container p-space-lg rounded-xl shadow-md flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded bg-surface-container-high flex items-center justify-center text-tertiary mb-space-md">
+<span class="material-symbols-outlined text-[28px]">share</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface mb-space-xs">Estrategia de Redes Sociales</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md">
+              Convertimos tus redes en plataformas vivas que cautivan audiencias y crean comunidades fieles.
+            </p>
+<ul class="flex flex-col gap-space-xs">
+<li class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-tertiary text-[16px]">check_circle</span> Planeación de contenidos de alto impacto
+              </li>
+<li class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-tertiary text-[16px]">check_circle</span> Gestión profesional de redes
+              </li>
+<li class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-tertiary text-[16px]">check_circle</span> Creación de contenido audiovisual
+              </li>
+<li class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-tertiary text-[16px]">check_circle</span> Community management estratégico
+              </li>
+</ul>
+</div>
+<div class="pt-space-md mt-space-md">
+<a class="font-label-md text-label-md uppercase text-tertiary hover:text-secondary flex items-center gap-1 transition-colors" href="#contacto">
+              Consultar servicio <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<div class="bg-surface-container p-space-lg rounded-xl shadow-md flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded bg-surface-container-high flex items-center justify-center text-secondary mb-space-md">
+<span class="material-symbols-outlined text-[28px]">manage_search</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface mb-space-xs">SEO y Posicionamiento</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md">
+              Aseguramos que quienes buscan tus productos y servicios te encuentren a través de búsqueda orgánica y motores IA.
+            </p>
+<ul class="flex flex-col gap-space-xs">
+<li class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span> Optimización para motores de búsqueda
+              </li>
+<li class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span> Arquitectura de contenidos semántica
+              </li>
+<li class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span> Investigación de palabras clave e intención
+              </li>
+<li class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span> Posicionamiento orgánico sostenido
+              </li>
+</ul>
+</div>
+<div class="pt-space-md mt-space-md">
+<a class="font-label-md text-label-md uppercase text-secondary hover:text-tertiary flex items-center gap-1 transition-colors" href="#contacto">
+              Consultar servicio <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<div class="bg-surface-container p-space-lg rounded-xl shadow-md flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded bg-surface-container-high flex items-center justify-center text-tertiary mb-space-md">
+<span class="material-symbols-outlined text-[28px]">campaign</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface mb-space-xs">Marketing Digital</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md">
+              Activaciones pagadas e integradas para acelerar la visibilidad y atraer prospectos calificados con eficiencia.
+            </p>
+<ul class="flex flex-col gap-space-xs">
+<li class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-tertiary text-[16px]">check_circle</span> Campañas digitales multicanal
+              </li>
+<li class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-tertiary text-[16px]">check_circle</span> Publicidad en plataformas digitales
+              </li>
+<li class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-tertiary text-[16px]">check_circle</span> Analítica de desempeño y conversión
+              </li>
+<li class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-tertiary text-[16px]">check_circle</span> Optimización continua de resultados
+              </li>
+</ul>
+</div>
+<div class="pt-space-md mt-space-md">
+<a class="font-label-md text-label-md uppercase text-tertiary hover:text-secondary flex items-center gap-1 transition-colors" href="#contacto">
+              Consultar servicio <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<div class="bg-surface-container p-space-lg rounded-xl shadow-md flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded bg-surface-container-high flex items-center justify-center text-secondary mb-space-md">
+<span class="material-symbols-outlined text-[28px]">auto_awesome</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface mb-space-xs">Branding y Comunicación</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md">
+              Creamos identidades que dejan huella, con un tono de voz reconocible y un sistema gráfico coherente.
+            </p>
+<ul class="flex flex-col gap-space-xs">
+<li class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span> Identidad y manual de marca
+              </li>
+<li class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span> Comunicación estratégica e institucional
+              </li>
+<li class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span> Conceptualización de marca
+              </li>
+<li class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span> Desarrollo de personalidad y voz
+              </li>
+</ul>
+</div>
+<div class="pt-space-md mt-space-md">
+<a class="font-label-md text-label-md uppercase text-secondary hover:text-tertiary flex items-center gap-1 transition-colors" href="#contacto">
+              Consultar servicio <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<div class="bg-surface-container p-space-lg rounded-xl shadow-md flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded bg-surface-container-high flex items-center justify-center text-tertiary mb-space-md">
+<span class="material-symbols-outlined text-[28px]">video_library</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface mb-space-xs">Contenido Digital</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md">
+              Producción de formatos dinámicos y piezas gráficas pensadas para retener atención y detonar acción.
+            </p>
+<ul class="flex flex-col gap-space-xs">
+<li class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-tertiary text-[16px]">check_circle</span> Producción de Video &amp; Reels dinámicos
+              </li>
+<li class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-tertiary text-[16px]">check_circle</span> Diseño de piezas gráficas y carruseles
+              </li>
+<li class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-tertiary text-[16px]">check_circle</span> Copywriting persuasivo y técnico
+              </li>
+<li class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-tertiary text-[16px]">check_circle</span> Contenido estratégico para redes
+              </li>
+</ul>
+</div>
+<div class="pt-space-md mt-space-md">
+<a class="font-label-md text-label-md uppercase text-tertiary hover:text-secondary flex items-center gap-1 transition-colors" href="#contacto">
+              Consultar servicio <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECCIÓN 4: METODOLOGÍA / ESTRATEGIA -->
+<section class="w-full py-space-xl px-margin-mobile md:px-margin-tablet lg:px-margin bg-surface" id="estrategia">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-xl">
+<div class="flex flex-col items-start gap-space-xs max-w-3xl">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Nuestro Proceso</span>
+<h2 class="font-headline-lg text-headline-lg font-bold text-on-surface">Detrás de cada publicación hay una estrategia.</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+          Evitamos la improvisación. Construimos un camino claro de 4 etapas:
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter relative">
+<div class="bg-surface-container-low p-space-lg rounded-xl shadow-md flex flex-col justify-between relative overflow-hidden">
+<div class="font-headline-lg text-headline-lg font-black text-secondary/20 absolute -top-2 right-4 select-none">01</div>
+<div class="relative z-10">
+<span class="font-label-sm text-label-sm uppercase text-secondary font-bold tracking-widest block mb-space-sm">Fase Inicial</span>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface mb-space-xs">Entendemos</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Conocemos la marca, el negocio, su público y sus objetivos a través de diagnósticos exhaustivos y sesiones de inmersión.
+            </p>
+</div>
+<div class="mt-space-md pt-space-sm">
+<span class="font-label-sm text-label-sm text-outline">Diagnóstico • Benchmark</span>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-lg rounded-xl shadow-md flex flex-col justify-between relative overflow-hidden">
+<div class="font-headline-lg text-headline-lg font-black text-tertiary/20 absolute -top-2 right-4 select-none">02</div>
+<div class="relative z-10">
+<span class="font-label-sm text-label-sm uppercase text-tertiary font-bold tracking-widest block mb-space-sm">Fase Arquitectura</span>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface mb-space-xs">Diseñamos</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Construimos una estrategia digital alineada con las necesidades de la marca, los canales pertinentes y los KPIs de negocio.
+            </p>
+</div>
+<div class="mt-space-md pt-space-sm">
+<span class="font-label-sm text-label-sm text-outline">Plan Maestro • Líneas de Contenido</span>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-lg rounded-xl shadow-md flex flex-col justify-between relative overflow-hidden">
+<div class="font-headline-lg text-headline-lg font-black text-secondary/20 absolute -top-2 right-4 select-none">03</div>
+<div class="relative z-10">
+<span class="font-label-sm text-label-sm uppercase text-secondary font-bold tracking-widest block mb-space-sm">Fase Producción</span>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface mb-space-xs">Creamos</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Convertimos la estrategia en contenido, comunicación y experiencias digitales con altos estándares estéticos y narrativos.
+            </p>
+</div>
+<div class="mt-space-md pt-space-sm">
+<span class="font-label-sm text-label-sm text-outline">Copy • Audiovisual • Publicación</span>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-lg rounded-xl shadow-md flex flex-col justify-between relative overflow-hidden">
+<div class="font-headline-lg text-headline-lg font-black text-tertiary/20 absolute -top-2 right-4 select-none">04</div>
+<div class="relative z-10">
+<span class="font-label-sm text-label-sm uppercase text-tertiary font-bold tracking-widest block mb-space-sm">Fase Crecimiento</span>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface mb-space-xs">Medimos y optimizamos</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Analizamos resultados y ajustamos la estrategia de forma continua para encontrar nuevas oportunidades de escalabilidad.
+            </p>
+</div>
+<div class="mt-space-md pt-space-sm">
+<span class="font-label-sm text-label-sm text-outline">Analítica • Iteración Sostenible</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECCIÓN 5: CARRUSEL DE IMÁGENES (4 FOTOGRAFÍAS REALES EN UN SOLO CARRUSEL) -->
+<section class="w-full py-space-xl px-margin-mobile md:px-margin-tablet lg:px-margin bg-surface-container-low">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-lg">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div class="flex flex-col items-start gap-space-xs max-w-2xl">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Ecosistema y Contenido</span>
+<h2 class="font-headline-lg text-headline-lg font-bold text-on-surface">Estrategia en Redes y Presencia de Marca</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Metodología visual, pilares de comunicación y arquitectura de contenido orientada a resultados comerciales.
+          </p>
+</div>
+<!-- Carousel navigation arrows -->
+<div class="flex items-center gap-space-sm">
+<button aria-label="Anterior diapositiva" class="w-12 h-12 rounded bg-surface-container flex items-center justify-center text-on-surface hover:bg-secondary hover:text-on-secondary transition-colors shadow" id="prevCarouselBtn">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<button aria-label="Siguiente diapositiva" class="w-12 h-12 rounded bg-surface-container flex items-center justify-center text-on-surface hover:bg-secondary hover:text-on-secondary transition-colors shadow" id="nextCarouselBtn">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Carousel Container Principal (1 diapositiva principal destacada a la vez con transiciones suaves) -->
+<div class="relative w-full max-w-3xl mx-auto overflow-hidden rounded-2xl bg-surface-container-lowest border border-outline-variant/30 shadow-2xl p-3 md:p-6">
+<div class="relative w-full overflow-hidden rounded-xl">
+<div class="flex transition-transform duration-500 ease-in-out" id="carouselTrack">
+<!-- Foto 1 -->
+<div class="w-full flex-shrink-0 flex flex-col items-center justify-center">
+<div class="w-full max-w-md mx-auto aspect-[4/5] rounded-xl overflow-hidden shadow-2xl bg-primary-container flex items-center justify-center">
+<img alt="Estrategia para redes sociales y presencia digital - Umma Marketing" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-Xi5z1Zr5KfBkiKNLNm5ilTR6f_3h66Sf4ELih1MBNvrT-Qpg79RG5isY2Lo_SLAbihsdZTE0EfC9iCenXJYjpb4QWy93ujn2rRqyXJnz1ZwaukLW1pWdSEroJ3ToEMuIy4QKcZCjlF1AQf_FU6dDWhI6cmdnO3RdrYdZAUw_NrZx1xPdWIC6e3nHdGLyidv3mqB1mYGE3zapouhqS9tred7k1idmm469o3URRYmGDCuqhCk9jdrpXqAIT9epe3qNmg"/>
+</div>
+<div class="mt-4 text-center px-4">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider bg-surface-container px-3 py-1 rounded-full">01 / Presencia Digital</span>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface mt-2">Esto es lo que pasa cuando nos encargamos de tus redes</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Estrategia integral orientada a visibilidad orgánica, engagement calificado y conversión.</p>
+</div>
+</div>
+<!-- Foto 2 -->
+<div class="w-full flex-shrink-0 flex flex-col items-center justify-center">
+<div class="w-full max-w-md mx-auto aspect-[4/5] rounded-xl overflow-hidden shadow-2xl bg-primary-container flex items-center justify-center">
+<img alt="Equipo de estrategia y creación de contenido para negocios - Umma Marketing" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRaSintY1JZOiEna_d3Bu75dEuBukmCckFqDvFo8vfNokznQdpnn2i7GULT70HCZUkXpSUGBTGjV_Er-xEf4DZnIIYg7pTmAWVBKqWEbktRa-0oSwgcDh8PZ5Nhnzkow4KuYNAkgDQR19ktr79SiDwTi0Fob7B5p60NtPnD0MGU7LOALw1_7nnxuHF8rxPWTG0PjKfUgc4OwPD26AeYtFgUM8IxPeqq10uDSIE-AC7uLBDkkPh_aqz0gMewye6GCn2YA"/>
+</div>
+<div class="mt-4 text-center px-4">
+<span class="font-label-sm text-label-sm text-tertiary uppercase tracking-wider bg-surface-container px-3 py-1 rounded-full">02 / Equipo Estratégico</span>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface mt-2">No somos espectadores, somos tu equipo</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Estructuramos pilares, identidad verbal, sistema gráfico y contenidos que educan, conectan y venden.</p>
+</div>
+</div>
+<!-- Foto 3 -->
+<div class="w-full flex-shrink-0 flex flex-col items-center justify-center">
+<div class="w-full max-w-md mx-auto aspect-[4/5] rounded-xl overflow-hidden shadow-2xl bg-primary-container flex items-center justify-center">
+<img alt="Ecosistema integral desde conceptualización de video hasta métricas de negocio - Umma Marketing" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuACmHSEfHlBKTnlEh_26scz60ABwF3gS9rj-EDd73usl60Ma5uV_OLUVDtgTmwea-IQutjOn9hWlGWUvpizvejnFAeJCPFV2YexX3HPiR2oPL-kBqmdHI2DwojMyELYmFZzNxrLyLUwXCGSC-sDtgtS_0tNxTdxz-IplV8XcWUmxnQxJ3eLteHC2hsvf4Mft_sLyjsVDWcTz7xqu8A2OJYdwLooNB5iF15lgiPGNSGxlKSZG0izUJsqQSXO-dn78Z9pRA"/>
+</div>
+<div class="mt-4 text-center px-4">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider bg-surface-container px-3 py-1 rounded-full">03 / Ecosistema 360°</span>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface mt-2">Nos encargamos de todo el ecosistema</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Desde conceptualización de videos y copywriting estratégico hasta métricas reales de negocio.</p>
+</div>
+</div>
+<!-- Foto 4 -->
+<div class="w-full flex-shrink-0 flex flex-col items-center justify-center">
+<div class="w-full max-w-md mx-auto aspect-[4/5] rounded-xl overflow-hidden shadow-2xl bg-primary-container flex items-center justify-center">
+<img alt="Delegar redes sociales en un equipo que entiende de negocios - Umma Marketing" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgwPYTeYdjhGyGRwgT7Y2P1AQnCbH6RGNRneXKs43gK94vN5vPslCwyJKd3WG31zfXvOhwisj0SFlQKXJRy0W98AyDXXgr3zNp7JE2KW8QpZI-xIkGjtucAFCoIDHSd8b_huPbotX02x9wx3Fu-6WMsnpFedQFXhps3pj3QCCOwncm35AH-l3WLOWN3UoxjHoA3EUbO6tgiJiWLG1UN673c8AJc9bDMwq-0fqdd_Gpm836pUthN9BN3IC8VWze3thyLw"/>
+</div>
+<div class="mt-4 text-center px-4">
+<span class="font-label-sm text-label-sm text-tertiary uppercase tracking-wider bg-surface-container px-3 py-1 rounded-full">04 / Enfoque Comercial</span>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface mt-2">Delega en un equipo que entiende de negocios</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Superamos las tendencias pasajeras para priorizar rentabilidad y crecimiento sostenible.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Indicator dots (4 fotos) -->
+<div class="flex items-center justify-center gap-space-xs mt-space-sm">
+<button aria-label="Slide 1" class="carousel-dot w-8 h-2 rounded-full bg-secondary-container transition-all" data-index="0"></button>
+<button aria-label="Slide 2" class="carousel-dot w-2 h-2 rounded-full bg-surface-container-highest transition-all" data-index="1"></button>
+<button aria-label="Slide 3" class="carousel-dot w-2 h-2 rounded-full bg-surface-container-highest transition-all" data-index="2"></button>
+<button aria-label="Slide 4" class="carousel-dot w-2 h-2 rounded-full bg-surface-container-highest transition-all" data-index="3"></button>
+</div>
+</div>
+</section>
+<!-- SECCIÓN 6: SECCIÓN DE VIDEO -->
+<section class="w-full py-space-xl px-margin-mobile md:px-margin-tablet lg:px-margin bg-surface">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-xl">
+<div class="flex flex-col items-center text-center gap-space-xs max-w-3xl mx-auto">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Nuestra Filosofía en Pantalla</span>
+<h2 class="font-headline-lg text-headline-lg font-bold text-on-surface">Así pensamos. Así creamos. Así hacemos marketing.</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+          Nuestra visión en movimiento y casos de enfoque estratégico para entender la diferencia entre presencia y trascendencia digital.
+        </p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-gutter">
+<!-- Video 1 -->
+<div class="bg-surface-container-low rounded-xl overflow-hidden shadow-lg flex flex-col">
+<div class="relative w-full aspect-video bg-primary-container flex items-center justify-center group overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-102 transition-transform duration-300" data-alt="Cinematic still from an agency manifesto video showing high-tech motion typography, dark blue atmospheric background with turquoise light streaks, creative strategists at work in high contrast lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEA2_YOxYYL3IKKwjSdGlSeK47UePEAI-Zq9zDvn5erQZ2jiHw3SGVqij9UC1pa4bm5MByk_UjxrMFK-xBzH9P7TGtG1jN0vL3WL2jsS3YKX3RYg6SuCuPRWs3Bs1I6kBpnFSCpp64H0SBXZJSD73CahBPQD391Ip3Ut1F68ts0MmKuOFpnfWJ2-89Lz1GaTAm8LBzpSQ7jTwUYul-1kVbTM-btUpz_a_a9tPichwGhAQp6gfcJArv"/>
+<div class="absolute inset-0 bg-primary-container/40"></div>
+<!-- Video Mock Player Overlay -->
+<button aria-label="Reproducir video Manifiesto" class="video-play-btn relative z-10 w-16 h-16 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shadow-lg hover:scale-110 hover:bg-tertiary hover:text-on-tertiary transition-transform duration-150">
+<span class="material-symbols-outlined text-[32px] ml-1">play_arrow</span>
+</button>
+<div class="absolute bottom-0 left-0 right-0 p-space-sm bg-gradient-to-t from-primary-container via-primary-container/70 to-transparent flex flex-col gap-1 z-10">
+<div class="w-full bg-surface-container-highest h-1 rounded-full overflow-hidden">
+<div class="bg-secondary-container h-full w-2/5"></div>
+</div>
+<div class="flex items-center justify-between text-outline font-label-sm text-label-sm pt-1">
+<span>00:34 / 01:24</span>
+<span class="text-tertiary">4K ULTRA HD</span>
+</div>
+</div>
+</div>
+<div class="p-space-md flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase text-secondary">Video 1</span>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Manifesto Umma: Estrategia con Propósito</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Una mirada profunda a nuestra forma de entender el entorno digital y por qué la coherencia siempre vence al ruido pasajero.
+            </p>
+</div>
+</div>
+<!-- Video 2 -->
+<div class="bg-surface-container-low rounded-xl overflow-hidden shadow-lg flex flex-col">
+<div class="relative w-full aspect-video bg-primary-container flex items-center justify-center group overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-102 transition-transform duration-300" data-alt="Behind the scenes documentary style still of an agency creative team analyzing real-time social media campaign metrics and testing high resolution content variations in a dark navy conference room with cyan accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHGr2v7eqly7x73hq6ngLIrJLtwSt0ZCpsOu4Ce5slqYxnp-mq8fjCqSy4VJk6LS7eSzKPw7I-5jmCdcjGpIxnSYqVE0mKvJ0zkjFW6TmlCnudCF_0X38KqQ_W_vlEWKBuM7sloNf5NYuo9Gth7ki8ybmLAdWE3tFqbKa7svFSEz_0NXUlJqQIJLArPwznp_45XxPboBjzhuphVHQ6_OLe5GlKQPleByt-fkKWLVTcW2GdLosKmZ9z"/>
+<div class="absolute inset-0 bg-primary-container/40"></div>
+<!-- Video Mock Player Overlay -->
+<button aria-label="Reproducir video Co-creación" class="video-play-btn relative z-10 w-16 h-16 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shadow-lg hover:scale-110 hover:bg-tertiary hover:text-on-tertiary transition-transform duration-150">
+<span class="material-symbols-outlined text-[32px] ml-1">play_arrow</span>
+</button>
+<div class="absolute bottom-0 left-0 right-0 p-space-sm bg-gradient-to-t from-primary-container via-primary-container/70 to-transparent flex flex-col gap-1 z-10">
+<div class="w-full bg-surface-container-highest h-1 rounded-full overflow-hidden">
+<div class="bg-tertiary h-full w-1/4"></div>
+</div>
+<div class="flex items-center justify-between text-outline font-label-sm text-label-sm pt-1">
+<span>00:32 / 02:10</span>
+<span class="text-secondary">PROCESO CREATIVO</span>
+</div>
+</div>
+</div>
+<div class="p-space-md flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase text-tertiary">Video 2</span>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Proceso de Co-Creación &amp; Campañas Digitales</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Cómo trabajamos hombro a hombro con nuestros clientes para transformar metas de negocio en narrativas digitales con conversión.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECCIÓN 7: POSICIONAMIENTO Y SEO -->
+<section class="w-full py-space-xl px-margin-mobile md:px-margin-tablet lg:px-margin bg-surface-container-lowest" id="seo">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<div class="lg:col-span-6 flex flex-col items-start gap-space-md">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-tertiary">Visibilidad y Tracción</span>
+<h2 class="font-headline-lg text-headline-lg font-bold text-on-surface">Que te encuentren también es parte de la estrategia.</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+          Una buena presencia digital no depende únicamente de publicar en redes sociales, sino también de construir contenido, estructura y señales digitales que permitan a las personas encontrar una marca. Integramos SEO técnico, arquitectura semántica y optimización para motores de búsqueda y motores de IA generativa.
+        </p>
+<div class="flex flex-col gap-space-md w-full pt-space-xs">
+<div class="bg-surface-container p-space-md rounded-lg flex items-start gap-space-md">
+<div class="w-10 h-10 rounded bg-primary-container flex items-center justify-center text-secondary flex-shrink-0">
+<span class="material-symbols-outlined text-[24px]">travel_explore</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Búsqueda Orgánica con Intención</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+                Estructuramos tu contenido para responder con precisión a lo que tus clientes ideales buscan activamente en la web.
+              </p>
+</div>
+</div>
+<div class="bg-surface-container p-space-md rounded-lg flex items-start gap-space-md">
+<div class="w-10 h-10 rounded bg-primary-container flex items-center justify-center text-tertiary flex-shrink-0">
+<span class="material-symbols-outlined text-[24px]">psychology</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Estructura Semántica para Motores de IA</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+                Optimizamos para modelos de búsqueda generativa (Google Gemini, ChatGPT, Perplexity) mediante esquemas de datos claros.
+              </p>
+</div>
+</div>
+<div class="bg-surface-container p-space-md rounded-lg flex items-start gap-space-md">
+<div class="w-10 h-10 rounded bg-primary-container flex items-center justify-center text-secondary flex-shrink-0">
+<span class="material-symbols-outlined text-[24px]">hub</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Estrategia de Redes que amplifica el Alcance</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+                Unificamos la indexación web con la conversación social para retroalimentar la autoridad digital de tu ecosistema.
+              </p>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-6 relative">
+<div class="bg-primary-container rounded-xl p-space-lg shadow-xl shadow-surface-container-lowest/90">
+<div class="flex items-center justify-between pb-space-md mb-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="w-3 h-3 rounded-full bg-secondary"></span>
+<span class="font-label-md text-label-md font-bold text-on-surface">Auditoría SEO &amp; Semántica</span>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container text-tertiary">ESTADO: CONFORME</span>
+</div>
+<div class="space-y-space-md">
+<div>
+<div class="flex justify-between font-label-md text-label-md mb-1">
+<span class="text-on-surface">Arquitectura de Información</span>
+<span class="text-secondary font-bold">100%</span>
+</div>
+<div class="w-full bg-surface-container h-2 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full w-full"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between font-label-md text-label-md mb-1">
+<span class="text-on-surface">Relevancia de Palabras Clave</span>
+<span class="text-tertiary font-bold">96%</span>
+</div>
+<div class="w-full bg-surface-container h-2 rounded-full overflow-hidden">
+<div class="bg-tertiary h-full rounded-full w-[96%]"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between font-label-md text-label-md mb-1">
+<span class="text-on-surface">Estructura para Motores de IA</span>
+<span class="text-secondary font-bold">94%</span>
+</div>
+<div class="w-full bg-surface-container h-2 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full w-[94%]"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between font-label-md text-label-md mb-1">
+<span class="text-on-surface">Sincronización con Redes Sociales</span>
+<span class="text-tertiary font-bold">98%</span>
+</div>
+<div class="w-full bg-surface-container h-2 rounded-full overflow-hidden">
+<div class="bg-tertiary h-full rounded-full w-[98%]"></div>
+</div>
+</div>
+</div>
+<div class="mt-space-lg p-space-md bg-surface-container rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[24px]">verified_user</span>
+<span class="font-body-sm text-body-sm text-on-surface">Rastreo e Indexabilidad Continua</span>
+</div>
+<a class="font-label-sm text-label-sm uppercase tracking-wider text-tertiary hover:underline" href="#contacto">Auditar mi marca</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECCIÓN 8: PROPUESTA DE VALOR (7 PILARES) -->
+<section class="w-full py-space-xl px-margin-mobile md:px-margin-tablet lg:px-margin bg-surface">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-xl">
+<div class="flex flex-col items-center text-center gap-space-xs max-w-3xl mx-auto">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Nuestra Propuesta de Valor</span>
+<h2 class="font-headline-lg text-headline-lg font-bold text-on-surface">Por qué elegir Umma Marketing</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+          Construimos relaciones basadas en fundamentos sólidos, claridad metodológica y resultados tangibles.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-gutter">
+<div class="bg-surface-container-low p-space-lg rounded-xl shadow-md flex flex-col">
+<div class="w-10 h-10 rounded bg-primary-container flex items-center justify-center text-secondary mb-space-md">
+<span class="material-symbols-outlined">rule</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface mb-space-xs">1. Estrategia antes que improvisación</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            No publicamos por publicar ni seguimos modas sin sentido; cada acción responde a un plan con objetivos claros.
+          </p>
+</div>
+<div class="bg-surface-container-low p-space-lg rounded-xl shadow-md flex flex-col">
+<div class="w-10 h-10 rounded bg-primary-container flex items-center justify-center text-tertiary mb-space-md">
+<span class="material-symbols-outlined">target</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface mb-space-xs">2. Contenido con propósito</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Desarrollamos piezas diseñadas para informar, emocionar y provocar decisiones reales en tus audiencias.
+          </p>
+</div>
+<div class="bg-surface-container-low p-space-lg rounded-xl shadow-md flex flex-col">
+<div class="w-10 h-10 rounded bg-primary-container flex items-center justify-center text-secondary mb-space-md">
+<span class="material-symbols-outlined">forum</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface mb-space-xs">3. Comunicación coherente</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Cuidamos que el tono, el diseño y el mensaje hablen el mismo lenguaje en todas las plataformas y puntos de contacto.
+          </p>
+</div>
+<div class="bg-surface-container-low p-space-lg rounded-xl shadow-md flex flex-col">
+<div class="w-10 h-10 rounded bg-primary-container flex items-center justify-center text-tertiary mb-space-md">
+<span class="material-symbols-outlined">visibility</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface mb-space-xs">4. Mayor presencia digital</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Ampliamos la huella y relevancia de tu marca para que gane terreno frente a competidores directos e indirectos.
+          </p>
+</div>
+<div class="bg-surface-container-low p-space-lg rounded-xl shadow-md flex flex-col">
+<div class="w-10 h-10 rounded bg-primary-container flex items-center justify-center text-secondary mb-space-md">
+<span class="material-symbols-outlined">trending_up</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface mb-space-xs">5. Posicionamiento</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Trabajamos para que tu negocio sea encontrado por las personas indicadas en el momento justo de su búsqueda.
+          </p>
+</div>
+<div class="bg-surface-container-low p-space-lg rounded-xl shadow-md flex flex-col">
+<div class="w-10 h-10 rounded bg-primary-container flex items-center justify-center text-tertiary mb-space-md">
+<span class="material-symbols-outlined">verified</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface mb-space-xs">6. Construcción de marca</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Construimos valor percibido duradero, más allá de transacciones aisladas, forjando credibilidad a largo plazo.
+          </p>
+</div>
+<div class="bg-surface-container-low p-space-lg rounded-xl shadow-md flex flex-col md:col-span-2 lg:col-span-3 xl:col-span-2">
+<div class="w-10 h-10 rounded bg-primary-container flex items-center justify-center text-secondary mb-space-md">
+<span class="material-symbols-outlined">query_stats</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface mb-space-xs">7. Decisiones basadas en datos</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Supervisamos métricas clave de rendimiento para identificar qué funciona, optimizar recursos y potenciar los resultados comerciales.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- SECCIÓN 9: PREGUNTAS FRECUENTES (FAQ) -->
+<section class="w-full py-space-xl px-margin-mobile md:px-margin-tablet lg:px-margin bg-surface-container-lowest">
+<div class="max-w-4xl mx-auto flex flex-col gap-space-xl">
+<div class="flex flex-col items-center text-center gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-tertiary">Resolvemos Dudas Frecuentes</span>
+<h2 class="font-headline-lg text-headline-lg font-bold text-on-surface">Preguntas Frecuentes sobre Marketing y Estrategia</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Claridad absoluta para tomar decisiones informadas sobre el crecimiento digital de tu empresa.
+        </p>
+</div>
+<div class="flex flex-col gap-space-sm" id="faqAccordion">
+<!-- FAQ 1 -->
+<div class="faq-item bg-surface-container rounded-lg overflow-hidden transition-colors">
+<button aria-expanded="true" class="faq-btn w-full p-space-md text-left flex items-center justify-between gap-space-md focus:outline-none">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">¿Qué hace Umma Marketing?</span>
+<span class="material-symbols-outlined text-secondary faq-icon transition-transform duration-200 rotate-180">expand_more</span>
+</button>
+<div class="faq-content px-space-md pb-space-md text-on-surface-variant font-body-md text-body-md">
+            Umma Marketing es una agencia que crea estrategias digitales, planes de redes sociales, branding, creación de contenido y posicionamiento SEO para ayudar a marcas y empresas a construir una presencia digital con propósito, estructura y potencial de crecimiento.
+          </div>
+</div>
+<!-- FAQ 2 -->
+<div class="faq-item bg-surface-container rounded-lg overflow-hidden transition-colors">
+<button aria-expanded="false" class="faq-btn w-full p-space-md text-left flex items-center justify-between gap-space-md focus:outline-none">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">¿Qué servicios de marketing digital ofrece Umma Marketing?</span>
+<span class="material-symbols-outlined text-secondary faq-icon transition-transform duration-200">expand_more</span>
+</button>
+<div class="faq-content hidden px-space-md pb-space-md text-on-surface-variant font-body-md text-body-md">
+            Ofrecemos seis soluciones clave: Planeación de Estrategia Digital, Estrategia y Gestión de Redes Sociales, Optimización SEO y Posicionamiento en Buscadores, Campañas de Marketing Digital y Publicidad Pagada, Identidad y Comunicación de Marca, y Producción de Contenido Multimedia.
+          </div>
+</div>
+<!-- FAQ 3 -->
+<div class="faq-item bg-surface-container rounded-lg overflow-hidden transition-colors">
+<button aria-expanded="false" class="faq-btn w-full p-space-md text-left flex items-center justify-between gap-space-md focus:outline-none">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">¿Qué es una estrategia digital?</span>
+<span class="material-symbols-outlined text-secondary faq-icon transition-transform duration-200">expand_more</span>
+</button>
+<div class="faq-content hidden px-space-md pb-space-md text-on-surface-variant font-body-md text-body-md">
+            Es la hoja de ruta que organiza y dirige los esfuerzos en canales digitales hacia objetivos medibles. Permite saber qué comunicar, en qué canales concentrarse, qué tipo de contenido producir y cómo medir el impacto sin desperdiciar tiempo ni presupuesto.
+          </div>
+</div>
+<!-- FAQ 4 -->
+<div class="faq-item bg-surface-container rounded-lg overflow-hidden transition-colors">
+<button aria-expanded="false" class="faq-btn w-full p-space-md text-left flex items-center justify-between gap-space-md focus:outline-none">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">¿Cómo ayuda el SEO al posicionamiento de una marca?</span>
+<span class="material-symbols-outlined text-secondary faq-icon transition-transform duration-200">expand_more</span>
+</button>
+<div class="faq-content hidden px-space-md pb-space-md text-on-surface-variant font-body-md text-body-md">
+            El SEO estructura la información técnica, las palabras clave y la arquitectura semántica para que los motores de búsqueda (como Google) y los nuevos motores de respuesta de Inteligencia Artificial entiendan la autoridad de tu marca y la sitúen frente a usuarios con intención clara de consulta o compra.
+          </div>
+</div>
+<!-- FAQ 5 -->
+<div class="faq-item bg-surface-container rounded-lg overflow-hidden transition-colors">
+<button aria-expanded="false" class="faq-btn w-full p-space-md text-left flex items-center justify-between gap-space-md focus:outline-none">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">¿Por qué una marca necesita una estrategia de redes sociales?</span>
+<span class="material-symbols-outlined text-secondary faq-icon transition-transform duration-200">expand_more</span>
+</button>
+<div class="faq-content hidden px-space-md pb-space-md text-on-surface-variant font-body-md text-body-md">
+            Porque estar presente sin dirección produce esfuerzo sin recompensa. Una estrategia define la frecuencia adecuada, el tipo de formatos (reels, carruseles, video), el tono de voz de la marca y las tácticas comunitarias necesarias para construir una audiencia leal que genere oportunidades comerciales.
+          </div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECCIÓN 10: CONTACTO Y FORMULARIO -->
+<section class="relative w-full py-space-xl lg:py-28 px-margin-mobile md:px-margin-tablet lg:px-margin bg-primary-container text-on-surface overflow-hidden" id="contacto">
+<div class="absolute -top-40 -left-40 w-96 h-96 rounded-full bg-secondary-container/10 blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-40 -right-40 w-96 h-96 rounded-full bg-tertiary/10 blur-3xl pointer-events-none"></div>
+<div class="relative z-10 max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
+<div class="lg:col-span-5 flex flex-col items-start gap-space-md">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Comencemos Hoy</span>
+<h2 class="font-headline-lg text-headline-lg font-bold text-on-surface leading-tight">
+          ¿Hablamos de lo que puede hacer tu marca en digital?
+        </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+          Cuéntanos sobre tu proyecto y encontremos juntos una estrategia para llevarlo más lejos.
+        </p>
+<div class="flex flex-col gap-space-md mt-space-sm">
+<div class="flex items-center gap-space-sm text-on-surface">
+<div class="w-10 h-10 rounded bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined">mark_email_read</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-outline block">Escríbenos directamente</span>
+<span class="font-body-md text-body-md font-medium">contacto@ummamarketing.com</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm text-on-surface">
+<div class="w-10 h-10 rounded bg-surface-container flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined">verified</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-outline block">Respuesta garantizada</span>
+<span class="font-body-md text-body-md font-medium">En menos de 24 horas laborables</span>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-7 bg-surface-container-low p-space-lg lg:p-space-xl rounded-xl shadow-2xl shadow-surface-container-lowest/90">
+<form class="flex flex-col gap-space-md" id="contactForm" onsubmit="event.preventDefault(); document.getElementById('formSuccessMsg').classList.remove('hidden'); this.reset();">
+<div>
+<label class="block font-label-md text-label-md uppercase tracking-wider text-on-surface-variant mb-space-xs" for="fullName">
+              Nombre completo <span class="text-secondary">*</span>
+</label>
+<input class="w-full bg-primary-container text-on-surface px-space-md py-space-sm rounded font-body-md text-body-md placeholder:text-outline focus:outline-none focus:ring-1 focus:ring-secondary transition-all" id="fullName" placeholder="Ej. Mariana González" required="" type="text"/>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div>
+<label class="block font-label-md text-label-md uppercase tracking-wider text-on-surface-variant mb-space-xs" for="emailAddr">
+                Correo electrónico <span class="text-secondary">*</span>
+</label>
+<input class="w-full bg-primary-container text-on-surface px-space-md py-space-sm rounded font-body-md text-body-md placeholder:text-outline focus:outline-none focus:ring-1 focus:ring-secondary transition-all" id="emailAddr" placeholder="mariana@empresa.com" required="" type="email"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md uppercase tracking-wider text-on-surface-variant mb-space-xs" for="phoneNum">
+                Teléfono <span class="text-secondary">*</span>
+</label>
+<input class="w-full bg-primary-container text-on-surface px-space-md py-space-sm rounded font-body-md text-body-md placeholder:text-outline focus:outline-none focus:ring-1 focus:ring-secondary transition-all" id="phoneNum" placeholder="+52 55 0000 0000" required="" type="tel"/>
+</div>
+</div>
+<div>
+<label class="block font-label-md text-label-md uppercase tracking-wider text-on-surface-variant mb-space-xs" for="companyName">
+              Nombre de la empresa <span class="text-secondary">*</span>
+</label>
+<input class="w-full bg-primary-container text-on-surface px-space-md py-space-sm rounded font-body-md text-body-md placeholder:text-outline focus:outline-none focus:ring-1 focus:ring-secondary transition-all" id="companyName" placeholder="Nombre de tu marca o negocio" required="" type="text"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md uppercase tracking-wider text-on-surface-variant mb-space-xs" for="projectGoals">
+              Mensaje / Cuéntanos tu objetivo <span class="text-outline text-label-sm">(Opcional)</span>
+</label>
+<textarea class="w-full bg-primary-container text-on-surface px-space-md py-space-sm rounded font-body-md text-body-md placeholder:text-outline focus:outline-none focus:ring-1 focus:ring-secondary transition-all" id="projectGoals" placeholder="¿Cuáles son tus prioridades en redes, posicionamiento o branding?" rows="4"></textarea>
+</div>
+<div class="hidden p-space-sm bg-tertiary-container text-tertiary rounded font-body-sm text-body-sm flex items-center gap-space-xs" id="formSuccessMsg">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+            ¡Gracias! Tu mensaje ha sido recibido. Nos comunicaremos contigo a la brevedad.
+          </div>
+<button class="w-full py-space-md px-space-lg bg-secondary-container text-on-secondary-container font-label-lg text-label-lg uppercase rounded shadow-lg hover:bg-tertiary hover:text-on-tertiary transition-all duration-150 flex items-center justify-center gap-space-xs" type="submit">
+<span>Quiero que hablemos</span>
+<span class="material-symbols-outlined text-[18px]">send</span>
+</button>
+<p class="font-body-sm text-body-sm text-outline text-center mt-space-xs">
+            Tus datos serán tratados con total confidencialidad y utilizados únicamente para ponernos en contacto contigo.
+          </p>
+</form>
+</div>
+</div>
+</section>
+<!-- Interactive Logic Scripts -->
+<script>
+    (function() {
+      // 1. FAQ Accordion Handling
+      const faqButtons = document.querySelectorAll('.faq-btn');
+      faqButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const isExpanded = btn.getAttribute('aria-expanded') === 'true';
+          const content = btn.nextElementSibling;
+          const icon = btn.querySelector('.faq-icon');
+
+          // Close all others
+          faqButtons.forEach(otherBtn => {
+            if (otherBtn !== btn) {
+              otherBtn.setAttribute('aria-expanded', 'false');
+              otherBtn.nextElementSibling.classList.add('hidden');
+              const otherIcon = otherBtn.querySelector('.faq-icon');
+              if (otherIcon) otherIcon.classList.remove('rotate-180');
+            }
+          });
+
+          // Toggle current
+          if (isExpanded) {
+            btn.setAttribute('aria-expanded', 'false');
+            content.classList.add('hidden');
+            if (icon) icon.classList.remove('rotate-180');
+          } else {
+            btn.setAttribute('aria-expanded', 'true');
+            content.classList.remove('hidden');
+            if (icon) icon.classList.add('rotate-180');
+          }
+        });
+      });
+
+      // 2. Carousel Interaction (1 slide at a time for 4 official slides)
+      const track = document.getElementById('carouselTrack');
+      const prevBtn = document.getElementById('prevCarouselBtn');
+      const nextBtn = document.getElementById('nextCarouselBtn');
+      const dots = document.querySelectorAll('.carousel-dot');
+      let currentIndex = 0;
+      const totalSlides = 4;
+
+      function updateCarousel(index) {
+        currentIndex = index;
+        if (currentIndex < 0) currentIndex = totalSlides - 1;
+        if (currentIndex >= totalSlides) currentIndex = 0;
+
+        track.style.transform = `translateX(-${currentIndex * 100}%)`;
+
+        dots.forEach((dot, i) => {
+          if (i === currentIndex) {
+            dot.classList.remove('bg-surface-container-highest', 'w-2');
+            dot.classList.add('bg-secondary-container', 'w-8');
+          } else {
+            dot.classList.remove('bg-secondary-container', 'w-8');
+            dot.classList.add('bg-surface-container-highest', 'w-2');
+          }
+        });
+      }
+
+      if (prevBtn && nextBtn) {
+        prevBtn.addEventListener('click', () => updateCarousel(currentIndex - 1));
+        nextBtn.addEventListener('click', () => updateCarousel(currentIndex + 1));
+      }
+
+      dots.forEach(dot => {
+        dot.addEventListener('click', () => {
+          const idx = parseInt(dot.getAttribute('data-index'), 10);
+          updateCarousel(idx);
+        });
+      });
+
+      // 3. Mock Video Play Feedback
+      const videoBtns = document.querySelectorAll('.video-play-btn');
+      videoBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const icon = btn.querySelector('.material-symbols-outlined');
+          if (icon.innerText === 'play_arrow') {
+            icon.innerText = 'pause';
+            btn.classList.add('scale-95');
+          } else {
+            icon.innerText = 'play_arrow';
+            btn.classList.remove('scale-95');
+          }
+        });
+      });
+
+      // 4. Smooth Anchor Scrolling
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          const targetId = this.getAttribute('href');
+          if (targetId.length > 1) {
+            const targetEl = document.querySelector(targetId);
+            if (targetEl) {
+              e.preventDefault();
+              targetEl.scrollIntoView({ behavior: 'smooth' });
+            }
+          }
+        });
+      });
+    })();
+  </script>
+</div></main><footer class="w-full bg-[#0b1c2c] text-on-surface-variant border-t border-surface-container"><div class="w-full px-margin-mobile md:px-margin-tablet lg:px-margin pt-space-xl pb-space-lg"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-gutter"><div class="lg:col-span-5 flex flex-col items-start gap-space-md"><div class="flex items-center gap-space-sm"><img alt="Umma Marketing - Logo Oficial" class="h-10 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPEj1tH0ef0UEaT3yCKOz-_zp5VJ9GTDAt6xAkr0wy1cUqPnUVXFZrtxiI-kMCzph7mTByJeEXrMwNHWxKoAKCl-eB7OzwCevSts1VxDfeJr_gqTqfWHUAKRZ0aS5uSAtnbmUSVJZ5kRIMgpHLEkUAthJHfTNJ9nm39eTyQ2T9hktEHUxEGxenSqgMn2alYD-7uchXcEZDjR31F071NXiQu79xoiEORRF2hx6Gj5xu1vEDPceT7-URB53TnB_cf-hGzw"/><span class="font-headline-sm text-headline-sm text-on-surface">Umma Marketing</span></div><p class="font-body-md text-body-md text-on-surface-variant max-w-md">Agencia boutique de marketing digital de alto impacto. Transformamos visión estratégica y vitalidad tecnológica en tracción medible y liderazgo de categoría.</p><div class="flex items-center gap-space-md pt-space-xs"><a aria-label="Instagram" class="w-10 h-10 rounded bg-surface-container flex items-center justify-center text-on-surface-variant hover:bg-primary-container hover:text-on-primary transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">photo_camera</span></a><a aria-label="TikTok" class="w-10 h-10 rounded bg-surface-container flex items-center justify-center text-on-surface-variant hover:bg-primary-container hover:text-on-primary transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">music_note</span></a><a aria-label="LinkedIn" class="w-10 h-10 rounded bg-surface-container flex items-center justify-center text-on-surface-variant hover:bg-primary-container hover:text-on-primary transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">business_center</span></a><a aria-label="Facebook" class="w-10 h-10 rounded bg-surface-container flex items-center justify-center text-on-surface-variant hover:bg-primary-container hover:text-on-primary transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">public</span></a></div></div><div class="lg:col-span-3 flex flex-col gap-space-sm"><span class="font-label-sm text-label-sm uppercase text-tertiary tracking-wider">Navegación</span><div class="flex flex-col gap-space-xs"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="inicio" href="#inicio">Inicio</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="nosotros" href="#nosotros">Nosotros</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="servicios" href="#servicios">Servicios</a></div></div><div class="lg:col-span-4 flex flex-col gap-space-sm"><span class="font-label-sm text-label-sm uppercase text-tertiary tracking-wider">Soluciones &amp; Contacto</span><div class="flex flex-col gap-space-xs"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="servicios" href="#servicios">SEO &amp; Rendimiento Orgánico</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="estrategia" href="#estrategia">Estrategia Digital Integral</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="contacto" href="#contacto">Contacto &amp; Consultoría</a></div></div></div><div class="mt-space-xl pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md"><p class="font-body-sm text-body-sm text-outline">© 2024 Umma Marketing. Todos los derechos reservados.</p><div class="flex items-center gap-space-lg"><a class="font-label-sm text-label-sm uppercase text-outline hover:text-on-surface transition-colors" data-path="privacidad" href="#">Privacidad</a><a class="font-label-sm text-label-sm uppercase text-outline hover:text-on-surface transition-colors" data-path="terminos" href="#">Términos</a><a class="font-label-sm text-label-sm uppercase text-outline hover:text-on-surface transition-colors" data-path="cookies" href="#">Cookies</a></div></div></div></footer></body></html>
